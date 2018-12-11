@@ -16,7 +16,7 @@ and how to import the users, passwords and tokens from different sources.
 
 The only thing which the endpoints defined by the server do is reporting in plain english that the user authenticated successfully and what is the user's recognized identity. An example server response looks like this:
 
-```bash
+```
 Well done demo-user! You are authorized basing on credentials stored in file. Your roles are: [ROLE_USER].
 ```
 
@@ -177,6 +177,6 @@ bash client-cmds.sh
 Each successfully processed `curl` request should end up with a response message printed out to the terminal.
 These are just plain english statements, which begin with the pattern:
 
-```bash
+```
 Well done .....
 ``` 

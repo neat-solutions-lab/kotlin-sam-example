@@ -108,15 +108,19 @@ method is not pointed, all the available methods will be enabled.
 with the prefix _SMS_ENV_USER_. Each eligible environment variable defines one user.
 For example, the `run-server.sh` script, 
 which is attached to this codebase, sets this environment variable in such a way:
-```SMS_ENV_USER_1="environment-demo-user:{noop}environment-demo-password USER"```
-This variable, together with the above configuration makes the server authenticate the user of the name
+
+    `SMS_ENV_USER_1="environment-demo-user:{noop}environment-demo-password USER"`
+
+    This variable, together with the above configuration makes the server authenticate the user of the name
 _environment-demo-user_ and the password _environment-demo-password_. The role assigned to the user is _USER_.
 3. The list of the tokens used by the token based authentication method is to be read from the
 environment variables whose names begin with _SMS_ENV_TOKEN_ prefix. One environment
 variable can define one token and the related user. For example, the `run-server.sh` script, 
 which is a part of this codebase, defines this environment variable:
-```SMS_ENV_TOKEN_1="TOKEN_READ_FROM_ENVIRONMENT environment-demo-user USER"```
-This variable together with the above configuration induce the server to recognize one token of
+
+    `SMS_ENV_TOKEN_1="TOKEN_READ_FROM_ENVIRONMENT environment-demo-user USER"`
+
+    This variable together with the above configuration induce the server to recognize one token of
 the value _TOKEN_READ_FROM_ENVIRONMENT_, whilst the name of the mapped user will be _environment-demo-user_.
 The role assigned to the user is _USER_.
 
